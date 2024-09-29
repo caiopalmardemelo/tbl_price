@@ -1,5 +1,11 @@
+@font-face {
+    font-family: CarvingSoft;
+    src: url(MADECarvingSoftPERSONALUSE-SemiBold.otf);
+}
+
 body{
-    background-image: url(fundo.jpg);
+    background-image: url(CONCRETE_3C.PNG);
+    font-family: CarvingSoft;
 }
 input{
     padding: 15px;
@@ -21,6 +27,34 @@ h1{
     color: yellow;
 }
 
+thead{
+    color: white;
+}
+tbody{
+    color: lightskyblue;
+}
+
 img{
-    width: 400px;
+    width: 200px;
+}
+.i_1{
+    width: 300px;
+}
+
+.anmtd{
+    background: linear-gradient(to right,blue,red,lime,yellow,blue);
+    background-size: 400% 100%;
+    animation: dgrd 5s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes dgrd {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
 }

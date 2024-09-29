@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela Price</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <img src="Dr_Richard_Price,_DD,_FRS_-_Benjamin_West.jpg" alt="">
-    <h1>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. O método foi apresentado em 1771 por Richard Price em sua obra "Observações sobre Pagamentos Remissivos" (em inglês: Observations on Reversionary Payments[1]).
+    <img src="Dr_Richard_Price,_DD,_FRS_-_Benjamin_West.jpg">
 
-        O método foi idealizado pelo seu autor para pensões e aposentadorias. No entanto, foi a partir da 2ª revolução industrial que sua metodologia de cálculo foi aproveitada para cálculos de amortização de empréstimo.</h1>
-    <input type="number" id="vlr" placeholder="Valor">
-    <input type="number" id="txa" placeholder="Taxa">
-    <input type="number" id="prcl" placeholder="Parcela">
-    <br><br>
-    <button onclick="clcr()">Clique</button>
-    <table id="tabela">
-        <thead>
-            <tr>
-                <th>Parcela</th>
-                <th>Prestação</th>
-                <th>Juros</th>
-                <th>Amortização</th>
-                <th>Saldo Devedor</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div class="anmtd">
+        Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. O método foi apresentado em 1771 por Richard Price em sua obra "Observações sobre Pagamentos Remissivos" (em inglês: Observations on Reversionary Payments[1]).
+
+O método foi idealizado pelo seu autor para pensões e aposentadorias. No entanto, foi a partir da 2ª revolução industrial que sua metodologia de cálculo foi aproveitada para cálculos de amortização de empréstimo.<br><br>
+        Você já pensou em reduzir o prazo de seu financiamento pela Tabela Price? Vamos supor que tenha um financiamento em andamento e queira fazer uma amortização extra para fins de redução do prazo. Como vimos no artigo anterior, a fórmula para o cálculo do pagamento mensal (PMT) pela Tabela Price é:<br>
+        <img class="i_1" src="formula_1-2.png"><br>
+        Como o financiamento está vigente, você já sabe o valor do PMT, da taxa de juros (i) e o saldo devedor que passa a ser o valor presente PV. Assim, o objetivo é determinar o valor do tempo (n) para o saldo devedor (após amortização extra) em algum momento dentro do prazo de financiamento.
+        </div>
+        
+    <input type="number" placeholder="Saldo Devedor" id="v">
+    <input type="number" placeholder="Taxa de Juros" id="i">
+    <input type="number" placeholder="Quantidade de Parcelas" id="n">
+    <button onclick="price()">Calcule!</button>
+
+    <h1>Tabela:</h1>
+
+    <div class="tab">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Parcela |</th>
+                    <th>Prestação |</th>
+                    <th>Juros |</th>
+                    <th>Amortização |</th>
+                    <th>Saldo Devedor</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
