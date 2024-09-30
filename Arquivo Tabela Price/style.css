@@ -22,6 +22,10 @@ button{
     border-radius: 5px;
     font-size: 15px;
 }
+button:hover{
+    cursor: pointer;
+    background-color: lightskyblue;
+}
 
 h1{
     color: yellow;
@@ -40,8 +44,12 @@ img{
 .i_1{
     width: 300px;
 }
+p{
+    color: violet;
+}
 
 .anmtd{
+    font-size: 50px;
     background: linear-gradient(to right,blue,red,lime,yellow,blue);
     background-size: 400% 100%;
     animation: dgrd 5s linear infinite alternate;
