@@ -3,8 +3,14 @@
     src: url(MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
 
+html{
+    background-image: url(Imagens/WARN_1A.PNG);
+    margin: 5px;
+}
+
 body{
-    background-image: url(CONCRETE_3C.PNG);
+    padding: 10px;
+    background-image: url(Imagens/CONCRETE_3C.PNG);
     font-family: CarvingSoft;
 }
 input{
@@ -27,22 +33,22 @@ button:hover{
     background-color: lightskyblue;
 }
 
-h1{
-    color: yellow;
-}
-
 thead{
-    color: white;
+    color: lightskyblue;
 }
 tbody{
+    background-color: #262F2F;
     color: lightskyblue;
 }
 
 img{
-    width: 200px;
+    width: 300px;
+}
+.btn{
+    width: 100px;
 }
 .i_1{
-    width: 300px;
+    width: 200px;
 }
 p{
     color: violet;
