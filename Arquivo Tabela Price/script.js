@@ -1,4 +1,3 @@
-
 function price(){
     let v = parseFloat(document.getElementById('v').value);
     let i = parseFloat(document.getElementById('i').value);
@@ -18,7 +17,6 @@ function price(){
                 `;
 
     corpo.innerHTML = linha1;
-
         for (let par=1; par<=n; par++){
 
             let linha =`

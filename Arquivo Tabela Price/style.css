@@ -8,6 +8,10 @@ html{
     margin: 5px;
 }
 
+header{
+    text-align: center;
+}
+
 body{
     padding: 10px;
     background-image: url(Imagens/CONCRETE_3C.PNG);
@@ -30,7 +34,15 @@ button{
 }
 button:hover{
     cursor: pointer;
+    transition: 0.25s;
     background-color: lightskyblue;
+}
+
+.mnsa{
+    margin-left: 200px;
+}
+#tabela{
+    margin-left: 250px;
 }
 
 thead{
@@ -44,9 +56,7 @@ tbody{
 img{
     width: 300px;
 }
-.btn{
-    width: 100px;
-}
+
 .i_1{
     width: 200px;
 }
