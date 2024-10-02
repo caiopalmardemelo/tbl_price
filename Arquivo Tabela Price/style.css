@@ -1,0 +1,96 @@
+@font-face {
+    font-family: CarvingSoft;
+    src: url(MADECarvingSoftPERSONALUSE-SemiBold.otf);
+}
+
+html{
+    background-image: url(Imagens/WARN_1A.PNG);
+    margin: 5px;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    padding: 10px;
+    background-image: url(Imagens/CONCRETE_3C.PNG);
+    font-family: CarvingSoft;
+}
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button{
+    background-color: red;
+    border: none;
+    padding: 15px;
+    width: 225px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+button:hover{
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: lightskyblue;
+}
+
+.mnsa{
+    margin-left: 200px;
+}
+#tabela{
+    margin-left: 250px;
+}
+
+thead{
+    color: lightskyblue;
+}
+tbody{
+    background-color: #262F2F;
+    color: lightskyblue;
+}
+
+img{
+    width: 300px;
+}
+
+h1{
+    color: white;
+}
+
+.i_1{
+    width: 200px;
+}
+p{
+    color: violet;
+}
+
+.anmtd{
+    font-size: 50px;
+    background: linear-gradient(to right,blue,red,lime,yellow,blue);
+    background-size: 400% 100%;
+    animation: dgrd 5s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes dgrd {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+.btn{
+    width: 100px;
+}
+.btn:hover{
+    filter: grayscale(50%);
+    transform: scale(0.95);
+}

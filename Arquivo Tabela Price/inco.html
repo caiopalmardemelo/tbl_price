@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Price by 2ºC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>⬇CALCULADORA⬇</h1>
+        <a href="index.html"><img class="btn" src="Imagens/onoff.png"></a>
+    
+        <div class="anmtd">SOBRE A TABELA PRICE</div>
+    </header>
+
+    <main>
+        <p>A Tabela Price, também conhecida como Sistema Francês de Amortização, tem suas raízes no século XVIII e leva o nome do matemático inglês Richard Price (1723-1791). Ele era um filósofo, economista e atuário que contribuiu significativamente para o estudo das finanças e do cálculo de juros compostos. 
+        <br><img class="i_1" src="Imagens/Dr_Richard_Price,_DD,_FRS_-_Benjamin_West.jpg"><br>
+
+        Richard Price ganhou destaque ao escrever sobre o conceito de valor do dinheiro no tempo, o que hoje é essencial na matemática financeira. Seus estudos sobre cálculos atuariais e teoria de seguros influenciaram vários setores financeiros, incluindo o campo dos empréstimos e financiamentos. Embora Price tenha se tornado amplamente conhecido por suas contribuições à economia e ao cálculo de seguros, seu nome foi vinculado ao método de amortização que leva em conta o pagamento de parcelas constantes ao longo do tempo. <br>
+        Você já pensou em reduzir o prazo de seu financiamento pela Tabela Price? Vamos supor que tenha um financiamento em andamento e queira fazer uma amortização extra para fins de redução do prazo. Como vimos no artigo anterior, a fórmula para o cálculo do pagamento mensal (PMT) pela Tabela Price é: 
+        <br><img src="Imagens/formula_1-2.png" alt=""><br>
+
+        Como o financiamento está vigente, você já sabe o valor do PMT, da taxa de juros (i) e o saldo devedor que passa a ser o valor presente PV. Assim, o objetivo é determinar o valor do tempo (n) para o saldo devedor (após amortização extra) em algum momento dentro do prazo de financiamento. Esse valor pode ser obtido, conforme segue: 
+        <br><img src="Imagens/formula_2-2-1024x275.png" alt=""><br>
+        
+        Onde R é a razão entre PMT e PV. <br> <br>
+        
+        Isolando o termo que contém n e aplicando o logaritmo, tem-se: 
+        <br><img src="Imagens/formula_4-2.png" alt=""><br>
+        
+        
+        Portanto, o tempo de financiamento para o saldo devedor atual fica: 
+        <br><img src="Imagens/formula_5-2.png" alt=""><br>
+        
+        
+        Para ilustrar uma aplicação, sejam os mesmos dados usados no artigo anterior: 
+        <br><img src="Imagens/formula_6-1.png" alt=""><br>
+        
+        i=0,0056541 <br>
+        PMT=1380,04 <br>
+        Amortização extra = R$ 20.000,00 a ser feita após o pagamento da 5ª parcela do financiamento. <br>
+        O valor presente é o saldo devedor no 5º mês (consulte o artigo anterior) menos a amortização extra: 
+        <br><img src="Imagens/formula_7-1.png" alt=""><br>
+        
+        
+        Sabendo o valor presente, pode-se determinar a razão R: 
+        <br><img src="Imagens/formula_8-1.png" alt=""><br>
+        
+        
+        Assim, o tempo equivalente para um novo valor de PV fica: 
+        <br><img src="Imagens/formula_9-1-1024x141.png" alt=""><br>
+        
+        
+        Como se trata de um número inteiro, arredonda-se o valor obtido para o inteiro mais próximo, ou seja, n=90. Portanto, a redução de prazo é equivalente a 25 meses, pois após o pagamento da 5ª parcela, faltavam 115 prestações que subtraídas de 90 resulta em 25. Além disso, deve-se atualizar o PMT, pois a amortização não foi feita com um número exato de prestações. Assim, deve-se calcular o novo PMT com base nas seguintes variáveis: <br><br>
+        
+        i=0,0056541 <br>
+        PV= 96452,40 <br>
+        n=90</p>
+    </main>
+</body>
+
+</html>
