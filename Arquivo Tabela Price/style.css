@@ -1,29 +1,31 @@
+/*isso aqui é a fonte*/
 @font-face {
     font-family: CarvingSoft;
     src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
-
+/*isso aqui é pra ter o fundo amarelo por tras do site*/
 html{
     background-image: url(Imagens/WARN_1A.PNG);
     margin: 5px;
 }
-
+/*pra alinhar o botão e o titulo da pagina*/
 header{
     text-align: center;
 }
-
+/*aqui eu to aplicando a fonte, dando uma margem pro fundo amarelo aparecer e colocando o fundo de tijolo preto do body*/
 body{
     padding: 10px;
     background-image: url(Imagens/CONCRETE_3C.PNG);
     font-family: CarvingSoft;
 }
+/*aqui é etilizando os canto q vc coloca os dados*/
 input{
     padding: 15px;
     border: none;
     outline: none;
     font-size: 15px;
 }
-
+/*mudando a cor do botao e deixando ele arrendonado*/
 button{
     background-color: red;
     border: none;
@@ -32,42 +34,46 @@ button{
     border-radius: 5px;
     font-size: 15px;
 }
+/*quando vc passa o mouse o botao muda de cor e fica com o mouse apontando*/
 button:hover{
     cursor: pointer;
     transition: 0.25s;
     background-color: lightskyblue;
 }
-
+/*é a div onde fica toda essa parte do site q não é a tabela em si*/
 .mnsa{
     margin-left: 500px;
 }
+/*e aqui é a tabela*/
 #tabela{
     margin-left: 200px;
 }
-
+/*estilizando a cor da parte da tabela que fica aparecendo mesmo sem calculo*/
 thead{
     color: lightskyblue;
 }
+/*a cor continua a mesma mas o fundo é diferente na parte que é um calculo*/
 tbody{
     background-color: #262F2F;
     color: lightskyblue;
 }
-
+/*isso muda o tamanho e todas as imagens num geral*/
 img{
     width: 300px;
 }
-
+/*estilizando a cor do texto h1*/
 h1{
     color: white;
 }
-
+/*isso muda o tamanho só do richard price*/
 .i_1{
     width: 200px;
 }
+/*estilizando a cor do texto paragrafo*/
 p{
     color: violet;
 }
-
+/*setando todas as cores e tamanho do nosso texto que vai ser uma animação*/
 .anmtd{
     font-size: 50px;
     background: linear-gradient(to right,blue,red,lime,yellow,blue);
@@ -76,6 +82,7 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/*animação colorida linda e maravilhosa*/
 @keyframes dgrd {
     0%{
         background-position-x: 0%;
@@ -85,10 +92,11 @@ p{
         background-position: 400%;
     }
 }
-
+/*mudando o tamanho da imagem que te direciona pra outra pagina*/
 .btn{
     width: 100px;
 }
+/*fazendo com que quando vc passa o mouse na imagem, esse botao diminue e fica com uma palheta cinza*/
 .btn:hover{
     filter: grayscale(50%);
     transform: scale(0.95);
