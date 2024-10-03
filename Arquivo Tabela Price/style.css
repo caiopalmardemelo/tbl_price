@@ -67,7 +67,10 @@ h1{
 }
 /*isso muda o tamanho só do richard price*/
 .i_1{
-    width: 200px;
+    width: 150px;
+    position: absolute;
+    top: 360px;
+    right: 450px;
 }
 /*estilizando a cor do texto paragrafo*/
 p{
@@ -100,4 +103,36 @@ p{
 .btn:hover{
     filter: grayscale(50%);
     transform: scale(0.95);
+}
+
+.historiatxt{
+    width: 800px;
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+
+.como1txt{
+    width: 500px;
+    margin-left: 375px;
+    margin-bottom: 100px
+}
+
+.como2txt{
+    width: 500px;
+    position: absolute;
+    top: 710px;
+    right: 375px
+}
+
+.exemplo1txt{
+    width: 500px;
+    margin-left: 375px;
+    margin-bottom: 100px
+}
+
+.exemplo2txt{
+    width: 500px;
+    position: absolute;
+    top: 1400px;
+    right: 375px;
 }
