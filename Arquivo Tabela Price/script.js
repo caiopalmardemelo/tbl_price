@@ -1,4 +1,5 @@
 function price(){
+    /* variáveis */
     let v = parseFloat(document.getElementById('v').value);
     let i = parseFloat(document.getElementById('i').value);
     let n = parseFloat(document.getElementById('n').value);
@@ -16,7 +17,12 @@ function price(){
                 </tr>
                 `;
 
-    corpo.innerHTML = linha1;
+    /* tratamento de erro */
+    if (isNaN(v) || isNaN(i) || isNaN(n)){
+        alert ('Um ou mais campos foram preenchidos incorretamente. Certifique-se de que todas as informações são números válidos.')
+    }else{
+    /* processo de construção da tabela */
+        corpo.innerHTML = linha1;
         for (let par=1; par<=n; par++){
 
             let linha =`
@@ -33,7 +39,7 @@ function price(){
             v = v - amor;
             juros = v * i;
             amor = p - juros;
-
+        }
     }
 
 }

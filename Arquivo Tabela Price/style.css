@@ -1,6 +1,6 @@
 @font-face {
     font-family: CarvingSoft;
-    src: url(MADECarvingSoftPERSONALUSE-SemiBold.otf);
+    src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
 
 html{
@@ -73,7 +73,6 @@ p{
     background: linear-gradient(to right,blue,red,lime,yellow,blue);
     background-size: 400% 100%;
     animation: dgrd 5s linear infinite alternate;
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
