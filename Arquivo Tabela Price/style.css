@@ -63,6 +63,7 @@ img{
 }
 /*estilizando a cor do texto h1*/
 h1{
+    text-align: center;
     color: white;
 }
 /*isso muda o tamanho só do richard price*/
