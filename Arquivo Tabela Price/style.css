@@ -70,8 +70,8 @@ h1{
 .i_1{
     width: 150px;
     position: absolute;
-    top: 360px;
-    right: 450px;
+    top: 55%;
+    right: 15%;
 }
 /*estilizando a cor do texto paragrafo*/
 p{
@@ -108,32 +108,32 @@ p{
 
 .historiatxt{
     width: 800px;
-    margin-left: 350px;
-    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .como1txt{
     width: 500px;
-    margin-left: 375px;
-    margin-bottom: 100px
+    margin-left: 5%;
+    margin-bottom: 0%;
 }
 
 .como2txt{
     width: 500px;
     position: absolute;
-    top: 710px;
-    right: 375px
+    top: 105%;
+    right: 5%;
 }
 
 .exemplo1txt{
     width: 500px;
-    margin-left: 375px;
-    margin-bottom: 100px
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .exemplo2txt{
     width: 500px;
     position: absolute;
-    top: 1400px;
-    right: 375px;
+    top: 210%;
+    right: 5%;
 }
