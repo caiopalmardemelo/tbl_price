@@ -42,11 +42,11 @@ button:hover{
 }
 /*é a div onde fica toda essa parte do site q não é a tabela em si*/
 .mnsa{
-    margin-left: 500px;
+    margin-left: 15%;
 }
 /*e aqui é a tabela*/
 #tabela{
-    margin-left: 200px;
+    margin-left: 20%;
 }
 /*estilizando a cor da parte da tabela que fica aparecendo mesmo sem calculo*/
 thead{
@@ -121,7 +121,7 @@ p{
 .como2txt{
     width: 500px;
     position: absolute;
-    top: 105%;
+    top: 100%;
     right: 5%;
 }
 
@@ -134,6 +134,6 @@ p{
 .exemplo2txt{
     width: 500px;
     position: absolute;
-    top: 210%;
+    top: 195%;
     right: 5%;
 }
