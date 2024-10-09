@@ -1,135 +1,96 @@
-/*isso aqui é a fonte*/
 @font-face {
     font-family: CarvingSoft;
     src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
-/*isso aqui é pra ter o fundo amarelo por tras do site*/
-html{
-    background-image: url(Imagens/WARN_1A.PNG);
-    margin: 5px;
+*{
+    margin: 0;
 }
-/*pra alinhar o botão e o titulo da pagina*/
-header{
-    text-align: center;
-}
-/*aqui eu to aplicando a fonte, dando uma margem pro fundo amarelo aparecer e colocando o fundo de tijolo preto do body*/
 body{
-    padding: 10px;
-    background-image: url(Imagens/CONCRETE_3C.PNG);
     font-family: CarvingSoft;
 }
-/*aqui é etilizando os canto q vc coloca os dados*/
+header{
+    background-color: #bb0048;
+}
+main{
+    text-align: center;
+    background-color: #EB3678;
+}
+.main1{
+    padding: 25px;
+}
+footer{
+    background-color: #bb0048;
+}
 input{
+    width: 200px;
     padding: 15px;
     border: none;
-    outline: none;
     font-size: 15px;
 }
-/*mudando a cor do botao e deixando ele arrendonado*/
 button{
-    background-color: red;
+    background-color: lime;
     border: none;
     padding: 15px;
     width: 225px;
     border-radius: 5px;
     font-size: 15px;
 }
-/*quando vc passa o mouse o botao muda de cor e fica com o mouse apontando*/
 button:hover{
     cursor: pointer;
     transition: 0.25s;
-    background-color: lightskyblue;
+    background-color: blue;
 }
-/*é a div onde fica toda essa parte do site q não é a tabela em si*/
-.mnsa{
-    margin-left: 15%;
-}
-/*e aqui é a tabela*/
-#tabela{
-    margin-left: 20%;
-}
-/*estilizando a cor da parte da tabela que fica aparecendo mesmo sem calculo*/
-thead{
-    color: lightskyblue;
-}
-/*a cor continua a mesma mas o fundo é diferente na parte que é um calculo*/
-tbody{
-    background-color: #262F2F;
-    color: lightskyblue;
-}
-/*isso muda o tamanho e todas as imagens num geral*/
-img{
-    width: 300px;
-}
-/*estilizando a cor do texto h1*/
-h1{
-    text-align: center;
-    color: white;
-}
-/*isso muda o tamanho só do richard price*/
-.i_1{
-    width: 150px;
-    position: absolute;
-    top: 360px;
-    right: 450px;
-}
-/*estilizando a cor do texto paragrafo*/
-p{
-    color: violet;
-}
-/*setando todas as cores e tamanho do nosso texto que vai ser uma animação*/
-.anmtd{
-    font-size: 50px;
-    background: linear-gradient(to right,blue,red,lime,yellow,blue);
-    background-size: 400% 100%;
-    animation: dgrd 5s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-/*animação colorida linda e maravilhosa*/
-@keyframes dgrd {
-    0%{
-        background-position-x: 0%;
-    }
-
-    100%{
-        background-position: 400%;
-    }
-}
-/*mudando o tamanho da imagem que te direciona pra outra pagina*/
-.btn{
+.redbtn{
     width: 100px;
 }
-/*fazendo com que quando vc passa o mouse na imagem, esse botao diminue e fica com uma palheta cinza*/
-.btn:hover{
+.redbtn:hover{
     filter: grayscale(50%);
     transform: scale(0.95);
 }
+img{
+    width: 400px;
+}
+.rchrd_prc{
+    width: 200px;
+}
 
-.historiatxt{
-    width: 800px;
-    margin-left: 350px;
-    margin-bottom: 100px;
+.box_mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.como1txt{
-    width: 500px;
-    margin-left: 375px;
-    margin-bottom: 100px
+
+.card{
+    padding: 10px;
+    background-color: #ff4590;
+    border-color: blue;
+    border-style: dotted;
+    margin: 20px;
+    width: 600px;
+    height: 600px;
+    text-align: center;
 }
-.como2txt{
-    width: 500px;
+
+p{
+    color: lime;
+}
+
+h1{
+    color: rgb(88, 24, 0);
+}
+
+.tlte{
     position: absolute;
-    top: 710px;
-    right: 375px
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
 }
-.exemplo1txt{
-    width: 500px;
-    margin-left: 375px;
-    margin-bottom: 100px
+
+#tab{
+    margin-left: 50%;
+    transform: translate(-50%);
 }
-.exemplo2txt{
-    width: 500px;
-    position: absolute;
-    top: 1400px;
-    right: 375px;
+tr{
+    color: cyan;
+    background-color: blue;
 }
