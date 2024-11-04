@@ -9,17 +9,17 @@ body{
     font-family: CarvingSoft;
 }
 header{
-    background-color: #b6285e;
+    background-color: #ff86b6;
 }
 main{
     text-align: center;
-    background-color: #ff669e;
+    background-color: pink;
 }
 .main1{
     padding: 25px;
 }
 footer{
-    background-color: #b6285e;
+    background-color: #ff86b6;
 }
 input{
     width: 200px;
@@ -28,7 +28,7 @@ input{
     font-size: 15px;
 }
 button{
-    background-color: white;
+    background-color: #ff86b6;
     border: none;
     padding: 15px;
     width: 225px;
@@ -64,6 +64,8 @@ img{
     padding: 10px;
     background-color: #ff86b6;
     margin: 20px;
+    border: #b6285e;
+    border-style: dotted;
     width: 600px;
     height: 600px;
     text-align: center;
@@ -74,7 +76,7 @@ p{
 }
 
 h1{
-    color: rgb(88, 24, 0);
+    color: #b6285e;
 }
 
 .tlte{
@@ -89,6 +91,6 @@ h1{
     transform: translate(-50%);
 }
 tr{
-    color: white;
-    background-color: #b6285e;
+    color: #ffffff;
+    background-color: #ff86b6;
 }
