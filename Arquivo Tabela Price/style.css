@@ -9,17 +9,17 @@ body{
     font-family: CarvingSoft;
 }
 header{
-    background-color: #bb0048;
+    background-color: #b6285e;
 }
 main{
     text-align: center;
-    background-color: #EB3678;
+    background-color: #ff669e;
 }
 .main1{
     padding: 25px;
 }
 footer{
-    background-color: #bb0048;
+    background-color: #b6285e;
 }
 input{
     width: 200px;
@@ -28,7 +28,7 @@ input{
     font-size: 15px;
 }
 button{
-    background-color: lime;
+    background-color: white;
     border: none;
     padding: 15px;
     width: 225px;
@@ -38,7 +38,7 @@ button{
 button:hover{
     cursor: pointer;
     transition: 0.25s;
-    background-color: blue;
+    background-color: #b6285e;
 }
 .redbtn{
     width: 100px;
@@ -62,9 +62,7 @@ img{
 
 .card{
     padding: 10px;
-    background-color: #ff4590;
-    border-color: blue;
-    border-style: dotted;
+    background-color: #ff86b6;
     margin: 20px;
     width: 600px;
     height: 600px;
@@ -72,7 +70,7 @@ img{
 }
 
 p{
-    color: lime;
+    color: white;
 }
 
 h1{
@@ -91,6 +89,6 @@ h1{
     transform: translate(-50%);
 }
 tr{
-    color: cyan;
-    background-color: blue;
+    color: white;
+    background-color: #b6285e;
 }
