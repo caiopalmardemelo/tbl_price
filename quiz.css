@@ -1,0 +1,48 @@
+@font-face {
+    font-family: mainfont;
+    src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
+}
+
+*{
+    font-family: mainfont;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+html{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    background-color: lightgray;
+}
+
+main h1{
+    width: 100%;
+    text-align: center;
+}
+
+.formula{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+footer{
+    background-color: gray;
+}
