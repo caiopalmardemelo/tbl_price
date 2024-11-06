@@ -12,6 +12,10 @@ header{
     height: 100px;
     background-color: #ff86b6;
 }
+.header_{
+    height: 100px;
+    background-color: #ff86b6;
+}
 main{
     text-align: center;
     background-color: #ffdae0;
@@ -87,6 +91,12 @@ h1{
     left: 50%;
     transform: translate(-50%);
 }
+.tlte_{
+    position: absolute;
+    top: 730px;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 .box_mae1{
     display: flex;
@@ -98,12 +108,18 @@ h1{
 }
 
 thead{
-    font-size: 25px;
-    background-color: black;
-    color: white;
+    opacity: 0;
 }
 tbody{
     font-size: 25px;
     color: #ffffff;
     background-color: #ff86b6;
+}
+
+a{
+    text-decoration: none;
+}
+.a_:hover{
+    color: white;
+    transition: 0.15s;
 }
