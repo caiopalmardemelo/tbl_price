@@ -118,6 +118,11 @@ button{
     border-radius: 5vh;
 }
 
+button:hover{
+    filter: brightness(150%);
+    transition: 0.5s;
+}
+
 footer{
     background-color: gray;
     height: 20vh;
