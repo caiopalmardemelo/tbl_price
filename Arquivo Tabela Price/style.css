@@ -9,6 +9,7 @@ body{
     font-family: CarvingSoft;
 }
 header{
+    height: 100px;
     background-color: #ff86b6;
 }
 main{
@@ -87,24 +88,22 @@ h1{
     transform: translate(-50%);
 }
 
-#tab{
-    margin-left: 50%;
-    transform: translate(-50%);
-}
-tr{
-    font-size: 25px;
-    color: #ffffff;
-    background-color: #ff86b6;
-}
-
 .box_mae1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .card1{
-    margin: 60px;
-    width: 400px;
-    height: 400px;
+    margin: 93px;
+}
+
+thead{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+tbody{
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #ff86b6;
 }
