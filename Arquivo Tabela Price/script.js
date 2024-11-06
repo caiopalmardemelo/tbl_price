@@ -6,7 +6,7 @@ function price(){
     let juros = v * i;
     let p = (v * Math.pow(1+i , n) * i)/(Math.pow(1+i , n)-1);
     let amor = p - juros;
-    let corpo = document.querySelector('#tab tbody');
+    let corpo = document.querySelector('table tbody');
     let linha1 =`
                 <tr>
                     <td>0</td>
