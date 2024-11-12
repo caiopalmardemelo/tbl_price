@@ -116,9 +116,9 @@ tr:nth-child(even){
 }
 
 th {
+    text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
     background-color: #ff4b90; 
     color: white;
 }
@@ -140,4 +140,18 @@ th {
 .inpt{
     margin: 25px;
 }
+.inpt_{
+    font-size: 50px;
+    width: 800px;
+    height: 150px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
 
+a{
+    text-decoration: none;
+}
+
+footer h1,p,ul{
+    color: black;
+}
