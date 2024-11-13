@@ -119,6 +119,10 @@ main{
     justify-content: space-evenly;
 }
 
+.questionario h2{
+    color: #b6285e;
+}
+
 form{
     display: flex;
     flex-wrap: wrap;
