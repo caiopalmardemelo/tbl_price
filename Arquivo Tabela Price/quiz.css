@@ -94,12 +94,13 @@ main{
     background-color: #ffdae0;
 }
 
-main h1{
+.formulatitle{
     width: 100%;
     text-align: center;
 }
 
 .formula{
+    margin-top: 2%;
     margin-left: 50%;
     transform: translate(-50%);
 }

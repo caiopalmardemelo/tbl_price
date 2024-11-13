@@ -48,8 +48,14 @@ function resposta(){
     var resp2 = document.querySelector('input[name="quest_2"]:checked');
     var resp3 = document.querySelector('input[name="quest_3"]:checked');
     var resp4 = document.querySelector('input[name="quest_4"]:checked');
+    var resp5 = document.querySelector('input[name="quest_5"]:checked');
+    var resp6 = document.querySelector('input[name="quest_6"]:checked');
+    var resp7 = document.querySelector('input[name="quest_7"]:checked');
+    var resp8 = document.querySelector('input[name="quest_8"]:checked');
+    var resp9 = document.querySelector('input[name="quest_9"]:checked');
+    var resp10 = document.querySelector('input[name="quest_10"]:checked');
     var contador = 0;
-    if(resp1 && resp2 && resp3 && resp4){
+    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){
         if(resp1.value == "correta"){
             document.getElementById("resp_correta_1").innerHTML = "<p>Correta!</p>"
             contador = contador + 1;
@@ -78,19 +84,47 @@ function resposta(){
         else{
             document.getElementById("resp_errada_4").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 100000; i = 0,0099; n = 240.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 1092,73</p>"
         }
-        if(resp4.value == "correta"){
+        if(resp5.value == "correta"){
             document.getElementById("resp_correta_5").innerHTML = "<p>Correta!</p>"
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_5").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 100000; i = 0,0099; n = 240.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 1092,73</p>"
+            document.getElementById("resp_errada_5").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 10000; i = 0,015; n = 12.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 917,00</p>"
         }
-        if(resp4.value == "correta"){
+        if(resp6.value == "correta"){
             document.getElementById("resp_correta_6").innerHTML = "<p>Correta!</p>"
             contador = contador + 1;
         }
         else{
-            document.getElementById("resp_errada_6").innerHTML = "<p>Errada, pois a soma dos quadrados dos catetos é igual ao quadrada da hipotenusa!</p>"
+            document.getElementById("resp_errada_6").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 15000; i = 0,02; n = 24.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 19046,40</p>"
+        }
+        if(resp7.value == "correta"){
+            document.getElementById("resp_correta_7").innerHTML = "<p>Correta!</p>"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_7").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 10000; i = 0,015; n = 18.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 19046,40</p>"
+        }
+        if(resp8.value == "correta"){
+            document.getElementById("resp_correta_8").innerHTML = "<p>Correta!</p>"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_8").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 20000; i = 0,018; n = 36.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 27411,68</p>"
+        }
+        if(resp9.value == "correta"){
+            document.getElementById("resp_correta_9").innerHTML = "<p>Correta!</p>"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_9").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 18000; i = 0,014; n = 36.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 608,47</p>"
+        }
+        if(resp10.value == "correta"){
+            document.getElementById("resp_correta_10").innerHTML = "<p>Correta!</p>"
+            contador = contador + 1;
+        }
+        else{
+            document.getElementById("resp_errada_10").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 20000; i = 0,018; n = 36.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 27411,68</p>"
         }
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
     }
