@@ -84,7 +84,7 @@ input{
     border: 2px solid black;
     width: 300px;
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 25px;
 }
 button{
@@ -93,15 +93,15 @@ button{
     padding: 25px;
     width: 350px;
     height: 87px;
-    border: 0.4vh solid black;
-    border-radius: 2vh;
+    border: 2px solid black;
+    border-radius: 25px;
     font-size: 25px;
 }
 button:hover{
     cursor: pointer;
-    transition: 0.25s;
+    transition: 0.10s;
     background-color: #ff4b90;
-    scale: 110%;
+    scale: 105%;
 }
 
 img{
@@ -124,7 +124,7 @@ img{
 }
 
 .card{
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 25px;
     background-color: #ff86b6;
     margin: 25px;
@@ -154,7 +154,8 @@ h1{
     justify-content: space-evenly;
 }
 
-ul{
+.card ul{
+    font-size: 25px;
     color: #b6285e;
     text-align: left;
     padding-left: 45%;
@@ -198,6 +199,7 @@ th {
     font-size: 25px;
 }
 .img_{
+    margin: 5px;
     width: 100px;
 }
 
@@ -209,8 +211,6 @@ th {
 
 .inpt{
     margin: 25px;
-    border: 0.4vh solid black;
-    border-radius: 2vh;
 }
 .inpt_{
     font-size: 50px;
@@ -224,12 +224,12 @@ a{
     text-decoration: none;
 }
 
-footer h1,p,ul{
+footer h1,ul{
     color: black;
 }
 
 footer ul li:hover{
     scale: 110%;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.10s;
 }
