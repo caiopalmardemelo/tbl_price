@@ -229,7 +229,7 @@ footer h1,ul{
 }
 
 footer ul li:hover{
-    scale: 110%;
+    scale: 105%;
     cursor: pointer;
     transition: 0.10s;
 }
