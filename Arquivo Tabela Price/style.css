@@ -7,79 +7,19 @@
     font-family: CarvingSoft;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
 header{
     text-align: center;
-    align-content: center;
-    margin: 0;
-    height: 140px;
+    height: 90px;
     background-color: #ff86b6;
-    display: flex;
-    flex-wrap: wrap;
 }
-
-header h1{
-    color: #b6285e;
-    font-size: 225%;
-}
-
-header div{
-    width: 100%;
-}
-
-.htitle{
-    height: 75%;
-    align-content: center;
-}
-
-.hnav{
-    display: flex;
-    height: 25%;
-}
-
-nav{
-    width: 100%;
-    align-self: flex-end;
-    background-color: #b6285e;
-    height: 35px;
-    align-content: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    color: white;
-    font-size: 130%;
-    width: 20%;
-}
-
-nav ul li:hover{
-    text-decoration: underline white;
-    cursor: pointer;
-}
-
 main{
     text-align: center;
     background-color: #ffdae0;
 }
 footer{
-    padding-top: 2%;
-    padding-bottom: 2%;
     background-color: #ff86b6;
 }
+
 input{
     border: 2px solid black;
     width: 300px;
@@ -93,15 +33,13 @@ button{
     padding: 25px;
     width: 350px;
     height: 87px;
-    border: 0.4vh solid black;
-    border-radius: 2vh;
+    border-radius: 25px;
     font-size: 25px;
 }
 button:hover{
     cursor: pointer;
     transition: 0.25s;
     background-color: #ff4b90;
-    scale: 110%;
 }
 
 img{
@@ -111,37 +49,30 @@ img{
     width: 200px;
 }
 
-.header_{
-    height: 90px;
-    text-decoration: underline 2.5px;
-    text-decoration-color: #b6285e;
-}
-
 .box_mae{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.card{
-    border-radius: 5px;
-    padding: 25px;
-    background-color: #ff86b6;
-    margin: 25px;
-    border: #b6285e;
-    border-style: dotted;
-    width: 1600px;
-}
-
-p{
-    font-size: 25px;
-    color: white;
-}
-
 h1{
     font-size: 35px;
     color: #b6285e;
     text-align: center;
+}
+P{
+    font-size: 25px;
+}
+
+.card{
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #ff86b6;
+    color: white;
+    margin: 25px;
+    border: #b6285e;
+    border-style: dotted;
+    width: 1600px;
 }
 
 .card_{
@@ -154,7 +85,14 @@ h1{
     justify-content: space-evenly;
 }
 
+.header_{
+    height: 100px;
+    text-decoration: underline 2.5px;
+    text-decoration-color: #b6285e;
+}
+
 ul{
+    font-size: 25px;
     color: #b6285e;
     text-align: left;
     padding-left: 45%;
@@ -163,7 +101,6 @@ ul{
 table {
     border-collapse: collapse;
     width: 82%;
-    margin-top: 3%;
 }
 table td, table th {
     border: 2px solid black;
@@ -195,41 +132,104 @@ th {
 .ul_{
     list-style: none;
     padding-left: 0;
-    font-size: 25px;
+}
+.ul_ li:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.15s;
 }
 .img_{
-    width: 100px;
+    width: 80px;
+    padding: 5px;
 }
-
 .img_:hover{
     scale: 110%;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.15s;
 }
 
 .inpt{
     margin: 25px;
-    border: 0.4vh solid black;
-    border-radius: 2vh;
 }
 .inpt_{
-    font-size: 50px;
-    width: 800px;
-    height: 150px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    font-size: 40px;
+    width: 500px;
+    height: 125px;
+    margin: 50px;
 }
 
 a{
     text-decoration: none;
 }
 
-footer h1,p,ul{
+footer h1, footer ul{
     color: black;
 }
 
-footer ul li:hover{
-    scale: 110%;
-    cursor: pointer;
-    transition: 0.2s;
+.frmla{
+    width: 600px;
+}
+
+.vrde{
+    color: lime;
+}
+.vrml{
+    color: red;
+}
+
+.qstn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-content: space-around;
+}
+
+.questao{
+    width: 100%;
+    margin-bottom: 5%
+}
+
+.questao input{
+    font-size: 200%;
+    scale: 200%;
+}
+
+.resposta{
+    margin-left: 100px;
+}
+
+.rescor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.rescor div{
+    width: 50%;
+}
+
+.qres{
+    margin-top: 5%;
+}
+
+.qres div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.correcao{
+    margin-top: 5%;
+    text-align: center;
+    align-content: center;
+}
+
+.linha{
+    border-left: 3px solid #b6285e;
 }
