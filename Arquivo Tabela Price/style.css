@@ -7,16 +7,77 @@
     font-family: CarvingSoft;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 header{
     text-align: center;
-    height: 90px;
+    align-content: center;
+    margin: 0;
+    height: 140px;
     background-color: #ff86b6;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+header h1{
+    color: #b6285e;
+    font-size: 225%;
+}
+
+header div{
+    width: 100%;
+}
+
+.htitle{
+    height: 75%;
+    align-content: center;
+}
+
+.hnav{
+    display: flex;
+    height: 25%;
+}
+
+nav{
+    width: 100%;
+    align-self: flex-end;
+    background-color: #b6285e;
+    height: 35px;
+    align-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    color: white;
+    font-size: 130%;
+    width: 20%;
+}
+
+nav ul li:hover{
+    text-decoration: underline white;
+    cursor: pointer;
+}
+
 main{
     text-align: center;
     background-color: #ffdae0;
 }
 footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: #ff86b6;
 }
 input{
@@ -32,13 +93,15 @@ button{
     padding: 25px;
     width: 350px;
     height: 87px;
-    border-radius: 10px;
+    border: 0.4vh solid black;
+    border-radius: 2vh;
     font-size: 25px;
 }
 button:hover{
     cursor: pointer;
     transition: 0.25s;
     background-color: #ff4b90;
+    scale: 110%;
 }
 
 img{
@@ -92,7 +155,6 @@ h1{
 }
 
 ul{
-    font-size: 25px;
     color: #b6285e;
     text-align: left;
     padding-left: 45%;
@@ -101,6 +163,7 @@ ul{
 table {
     border-collapse: collapse;
     width: 82%;
+    margin-top: 3%;
 }
 table td, table th {
     border: 2px solid black;
@@ -132,13 +195,22 @@ th {
 .ul_{
     list-style: none;
     padding-left: 0;
+    font-size: 25px;
 }
 .img_{
     width: 100px;
 }
 
+.img_:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
 .inpt{
     margin: 25px;
+    border: 0.4vh solid black;
+    border-radius: 2vh;
 }
 .inpt_{
     font-size: 50px;
@@ -154,4 +226,10 @@ a{
 
 footer h1,p,ul{
     color: black;
+}
+
+footer ul li:hover{
+    scale: 110%;
+    cursor: pointer;
+    transition: 0.2s;
 }
