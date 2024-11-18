@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amortização Price | Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- DEFINE O TIPO DE DOCUMENTO COMO HTML5 -->
+    <meta charset="UTF-8"> <!-- DEFINE A CODIFICAÇÃO DE CARACTERES COMO UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- TORNA A PÁGINA RESPONSIVA -->
+    <title>Amortização Price | Calculadora</title> <!-- TÍTULO EXIBIDO NA ABA DO NAVEGADOR -->
+    <link rel="stylesheet" href="style.css"> <!-- LINK PARA O ARQUIVO DE ESTILOS CSS -->
+    <script src="script.js"></script> <!-- LINK PARA O ARQUIVO DE SCRIPT JAVASCRIPT -->
 </head>
 
 <body>
+    <!-- CABEÇALHO DA PÁGINA -->
     <header>
         <div class="htitle">
-            <h1>CALCULADORA DE AMORTIZAÇÃO PRICE</h1>
+            <h1>CALCULADORA DE AMORTIZAÇÃO PRICE</h1> <!-- TÍTULO PRINCIPAL DA PÁGINA -->
         </div>
         <div class="hnav">
             <nav>
+                <!-- BARRA DE NAVEGAÇÃO -->
                 <ul>
-                    <li><a href="#sobre">Sobre Price</li></a>
-                    <li><a href="quiz.html">Faça o Quiz</li></a>
-                    <li><a href="#devs">Desenvolvedores</a></li>
+                    <li><a href="#sobre">Sobre Price</a></li> <!-- LINK PARA A SEÇÃO "SOBRE" -->
+                    <li><a href="quiz.html">Faça o Quiz</a></li> <!-- LINK PARA A PÁGINA DE QUIZ -->
+                    <li><a href="#devs">Desenvolvedores</a></li> <!-- LINK PARA A SEÇÃO "DESENVOLVEDORES" -->
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
+        <!-- SEÇÃO DA CALCULADORA -->
         <section class="card_">
+            <!-- ENTRADAS PARA OS VALORES NECESSÁRIOS -->
             <input class="inpt" type="text" placeholder="Saldo Devedor" id="v">
             <input class="inpt" type="text" placeholder="Taxa de Juros (Decimal)" id="i">
             <input class="inpt" type="text" placeholder="Quantidade de Parcelas" id="n">
-            <button class="inpt" onclick="price()">Calcule</button>
+            <button class="inpt" onclick="price()">Calcule</button> <!-- BOTÃO QUE CHAMA A FUNÇÃO JAVASCRIPT "PRICE" -->
+
+            <!-- TABELA PARA EXIBIR OS RESULTADOS -->
             <table>
                 <thead>
                     <tr>
@@ -40,70 +49,54 @@
                     </tr>
                 </thead>
                 <tbody>
+                <!-- OS DADOS DA TABELA SERÃO PREENCHIDOS DINAMICAMENTE VIA JAVASCRIPT -->
                 </tbody>
             </table>
         </section>
 
+        <!-- SEÇÃO "SOBRE" -->
         <div class="header_"><br>
             <h1>SOBRE TABELA PRICE</h1>
         </div>
         
         <section class="box_mae" id="sobre">
-            
+            <!-- CARD SOBRE A HISTÓRIA DA TABELA PRICE -->
             <div class="card">
                 <h1>História</h1><br>
-                <p>A Tabela Price é uma metodologia de amortização amplamente utilizada para calcular parcelas fixas em financiamentos e empréstimos. Seu nome vem do matemático e atuário escocês Richard Price, que desenvolveu essa fórmula no século XVIII para simplificar os cálculos de pagamentos em séries financeiras. Richard Price não criou a tabela com o intuito de aplicá-la em financiamentos, mas sim para resolver problemas de aposentadoria e apólices de seguros. Com o tempo, a fórmula de Price passou a ser aplicada também em financiamentos de bens duráveis e imóveis, ganhando destaque no mercado financeiro.</p><br>
-                <p>No começo do contrato, a maior parte da parcela corresponde aos juros, enquanto a parte da amortização é menor. À medida que o tempo passa, a proporção dos juros diminui, e a amortização aumenta, até que o saldo devedor seja totalmente quitado. Atualmente, a Tabela Price é amplamente usada em financiamentos de veículos, imóveis e outros bens de consumo, especialmente onde o valor das prestações fixas oferece um atrativo de previsibilidade aos clientes. O impacto dessa metodologia na economia é significativo, pois ela ajuda tanto consumidores quanto instituições financeiras a projetarem custos e rendimentos de forma previsível, incentivando o consumo e a movimentação do crédito na economia.</p><br>
-                <img class="rchrd_prc" src="Imagens/Dr_Richard_Price,_DD,_FRS_-_Benjamin_West.jpg">
+                <p>A Tabela Price é uma metodologia de amortização amplamente utilizada para calcular parcelas fixas em financiamentos e empréstimos...</p>
+                <img class="rchrd_prc" src="Imagens/Dr_Richard_Price,_DD,_FRS_-_Benjamin_West.jpg"> <!-- IMAGEM ILUSTRATIVA -->
             </div>
+
+            <!-- CARD SOBRE O FUNCIONAMENTO DA TABELA PRICE -->
             <div class="card">
                 <h1>Como Funciona</h1><br>
-                <p>Você já pensou em reduzir o prazo de seu financiamento pela Tabela Price? Vamos supor que tenha um financiamento em andamento e queira fazer uma amortização extra para fins de redução do prazo. Como vimos no artigo anterior, a fórmula para o cálculo do pagamento mensal (PMT) pela Tabela Price é:</p><br>
-                <img src="Imagens/formula_1-2.png"><br>
-                <p>Como o financiamento está vigente, você já sabe o valor do PMT, da taxa de juros (i) e o saldo devedor que passa a ser o valor presente PV. Assim, o objetivo é determinar o valor do tempo (n) para o saldo devedor (após amortização extra) em algum momento dentro do prazo de financiamento. Esse valor pode ser obtido, conforme segue:</p><br>
-                <img src="Imagens/formula_2-2-1024x275.png"><br>
-                <p>Onde R é a razão entre PMT e PV.</p><br>
-                <p>Isolando o termo que contém n e aplicando o logaritmo, tem-se:</p><br>
-                <img src="Imagens/formula_4-2.png"><br>
-                <p>Portanto, o tempo de financiamento para o saldo devedor atual fica:</p><br>
-                <img src="Imagens/formula_5-2.png"></p>
+                <p>Você já pensou em reduzir o prazo de seu financiamento pela Tabela Price?...</p>
+                <img src="Imagens/formula_1-2.png"><br> <!-- FÓRMULA DA TABELA PRICE -->
             </div>
+
+            <!-- CARD COM EXEMPLO DE APLICAÇÃO -->
             <div class="card">
                 <h1>Exemplo</h1><br>
-                <p>Para ilustrar uma aplicação, sejam os mesmos dados usados no artigo anterior:</p><br>
-                <img src="Imagens/formula_6-1.png"><br>
-                <ul>
-                    <li>i = 0,0056541</li>
-                    <li>PMT = 1380,04</li>
-                    <li>Amortização extra = R$ 20.000,00</li>
-                </ul>
-                <p>O valor presente é o saldo devedor no 5º mês (consulte o artigo anterior) menos a amortização extra:</p><br>
-                <img src="Imagens/formula_7-1.png"><br>
-                <p>Sabendo o valor presente, pode-se determinar a razão R:</p><br>
-                <img src="Imagens/formula_8-1.png"><br>
-                <p>Assim, o tempo equivalente para um novo valor de PV fica:</p><br>
-                <img src="Imagens/formula_9-1-1024x141.png"><br>
-                <p>Como se trata de um número inteiro, arredonda-se o valor obtido para o inteiro mais próximo, ou seja, n=90. Portanto, a redução de prazo é equivalente a 25 meses, pois após o pagamento da 5ª parcela, faltavam 115 prestações que subtraídas de 90 resulta em 25. Além disso, deve-se atualizar o PMT, pois a amortização não foi feita com um número exato de prestações. Assim, deve-se calcular o novo PMT com base nas seguintes variáveis:</p><br>
-                <ul>
-                    <li>i = 0,0056541</li>
-                    <li>PV = 96452,40</li>
-                    <li>n = 90</li>
-                </ul>
+                <p>Para ilustrar uma aplicação, sejam os mesmos dados usados no artigo anterior...</p>
             </div>
+
+            <!-- CARD COM VANTAGENS E DESVANTAGENS -->
             <div class="card">
                 <h1>Vantagens da Tabela Price</h1><br>
-                <p>Apesar de algumas desvantagens, a Tabela Price apresenta diversas vantagens que a tornam uma opção atraente em várias situações de crédito. A principal vantagem é a previsibilidade das parcelas fixas ao longo de todo o contrato. Isso significa que o cliente sabe exatamente quanto vai pagar a cada mês, o que facilita o planejamento financeiro. Essa previsibilidade é especialmente útil para consumidores que precisam organizar suas finanças com antecedência e não querem lidar com variações nas parcelas.</p><br>
-                <p>Além disso, a Tabela Price é um sistema simples e amplamente conhecido no mercado financeiro, o que facilita o entendimento tanto para consumidores quanto para instituições financeiras. A estabilidade das prestações é atraente para aqueles que desejam uma abordagem mais segura e organizada em seu planejamento financeiro, sem surpresas ao longo do período de pagamento.</p><br>
+                <p>Apesar de algumas desvantagens, a Tabela Price apresenta diversas vantagens...</p>
                 <h1>Desvantagens da Tabela Price</h1><br>
-                <p>A Tabela Price possui algumas desvantagens que podem tornar essa modalidade de amortização menos atrativa em determinados tipos de financiamento, especialmente em prazos mais longos. Uma das principais desvantagens é o custo total elevado com juros. No início do financiamento, grande parte da parcela é destinada ao pagamento dos juros, enquanto a amortização do principal (a parte que reduz efetivamente o saldo devedor) é pequena. Isso significa que, durante boa parte do contrato, o saldo devedor diminui de forma lenta, o que acaba gerando um custo maior ao longo do tempo em comparação a outros sistemas de amortização, como o SAC (Sistema de Amortização Constante).</p>
+                <p>A Tabela Price possui algumas desvantagens que podem tornar essa modalidade de amortização menos atrativa...</p>
             </div>
         </section>
         
+        <!-- BOTÃO PARA O QUIZ -->
         <a href="quiz.html"><button class="inpt_">Gostou? Faça nosso quiz!</button></a>
-
     </main>
+
+    <!-- RODAPÉ -->
     <footer>
         <section class="footer_">
+            <!-- INFORMAÇÕES SOBRE OS DESENVOLVEDORES -->
             <div id="devs">
                 <h1>Quem Somos:</h1>
                 <ul class="ul_">
@@ -115,12 +108,16 @@
                     <li>Vinicius</li>
                 </ul>
             </div>
+
+            <!-- IMAGEM DA MARCA OU LOGOTIPO -->
             <img src="Imagens/smartlutherkings.png">
+
+            <!-- LINKS PARA REDES SOCIAIS -->
             <div>
                 <h1>Redes Sociais:</h1><br>
-                <img class="img_" src="Imagens/5279111_network_fb_social media_facebook_facebook logo_icon.png">
-                <img class="img_" src="Imagens/5279112_camera_instagram_social media_instagram logo_icon.png">
-                <img class="img_" src="Imagens/5279123_tweet_twitter_twitter logo_icon.png">
+                <img class="img_" src="Imagens/5279111_network_fb_social media_facebook_facebook logo_icon.png"> <!-- FACEBOOK -->
+                <img class="img_" src="Imagens/5279112_camera_instagram_social media_instagram logo_icon.png"> <!-- INSTAGRAM -->
+                <img class="img_" src="Imagens/5279123_tweet_twitter_twitter logo_icon.png"> <!-- TWITTER -->
             </div>
         </section>
     </footer>
