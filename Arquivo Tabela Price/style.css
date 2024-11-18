@@ -86,7 +86,6 @@ nav ul li:hover {
 
 main {
     /* ESTILO DA ÁREA PRINCIPAL */
-    text-align: center;
     background-color: #ffdae0;
 }
 
@@ -157,13 +156,23 @@ img {
     margin: 25px;
     border: #b6285e;
     border-style: dotted;
-    width: 1600px;
+    width: 80%;
+    text-align: center;
+}
+
+.form{
+    filter: invert();
+    scale: 110%;
 }
 
 p {
     /* ESTILO DOS PARÁGRAFOS */
     font-size: 25px;
     color: white;
+    text-align: justify;
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 h1 {
@@ -176,7 +185,7 @@ h1 {
 .card_ {
     /* CONFIGURAÇÃO DE UM CARD ESPECÍFICO */
     padding: 100px;
-    width: 1000px;
+    width: 50%;
     margin-left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -195,8 +204,8 @@ h1 {
 table {
     /* ESTILO DAS TABELAS */
     border-collapse: collapse;
-    width: 82%;
     margin-top: 3%;
+    width: 85%;
 }
 
 table td, table th {
@@ -258,13 +267,18 @@ th {
     margin: 25px;
 }
 
+.botao{
+    width: 100%;
+    text-align: center;
+}
+
 .inpt_ {
     /* ESTILO ESPECÍFICO PARA BOTÕES DE ENTRADA */
     font-size: 50px;
-    width: 800px;
-    height: 150px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    width: 75%;
+    height: 20vh;
+    margin-top: 4%;
+    margin-bottom: 5%;
 }
 
 a {
@@ -283,3 +297,7 @@ footer ul li:hover {
     cursor: pointer;
     transition: 0.10s;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 800px) {
