@@ -1,71 +1,64 @@
 @font-face {
-    font-family: mainfont;
+    /* DEFININDO UMA FONTE PERSONALIZADA */
+    font-family: CarvingSoft;
     src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
 
-*{
-    font-family: mainfont;
-}
-
-h1{
+/* RESETANDO PADRÕES E DEFININDO UMA FONTE GLOBAL */
+* {
+    font-family: CarvingSoft;
     margin: 0;
 }
 
-p{
-    margin: 0;
-}
-
-a{
+a {
+    /* REMOVENDO SUBLINHADO E COR */
     text-decoration: none;
     color: inherit;
 }
 
-html{
-    margin: 0;
-}
-
-body{
-    margin: 0;
-}
-
-header{
+    /* CONFIGURAÇÕES DO CABEÇALHO */
+header {
     text-align: center;
     align-content: center;
     margin: 0;
     height: 140px;
-    background-color: #ff86b6;
+    background-color: #ff86b6; /* COR DE FUNDO ROSA */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* PERMITE QUE O CONTEÚDO SE AJUSTE */
 }
 
-header h1{
+header h1 {
+    /* ESTILO DO TÍTULO PRINCIPAL NO HEADER */
     color: #b6285e;
     font-size: 225%;
 }
 
-header div{
-    width: 100%;
+header div {
+    width: 100%; /* FAZ O ELEMENTO OCUPAR TODA A LARGURA */
 }
 
-.htitle{
+/* SEPARANDO ALTURA DO HEADER ENTRE TÍTULO E NAVEGAÇÃO */
+.htitle {
     height: 75%;
     align-content: center;
 }
 
-.hnav{
+.hnav {
     display: flex;
     height: 25%;
 }
 
-nav{
+/* ESTILIZAÇÃO DO NAV (MENU DE NAVEGAÇÃO) */
+nav {
     width: 100%;
-    align-self: flex-end;
+    align-self: flex-end; /* POSICIONA AO FINAL DO HEADER */
     background-color: #b6285e;
     height: 35px;
     align-content: center;
 }
 
 nav ul {
+    /* CONFIGURAÇÃO DA LISTA DE NAVEGAÇÃO */
     list-style-type: none;
     padding-left: 5%;
     padding-right: 5%;
@@ -76,161 +69,183 @@ nav ul {
 }
 
 nav ul li {
+    /* ESTILO DOS ITENS DO MENU */
     display: inline;
     color: white;
     font-size: 130%;
     width: 20%;
 }
 
-nav ul li:hover{
+nav ul li:hover {
+    /* EFEITO HOVER NOS LINKS DO MENU */
     text-decoration: underline white;
     cursor: pointer;
 }
 
-main{
-    background-color: lightgray;
+/* ESTILIZAÇÃO DO MAIN */
+main {
+    background-color: #ffdae0; /* COR DE FUNDO CLARA */
     padding-top: 5%;
     padding-bottom: 5%;
-    background-color: #ffdae0;
 }
 
-.formulatitle{
+.formulatitle {
+    /* TÍTULO DA SEÇÃO DO FORMULÁRIO */
     width: 100%;
     text-align: center;
     color: #b6285e;
 }
 
-.formula{
+.formula {
+    /* CENTRALIZA O FORMULÁRIO */
     margin-top: 2%;
     margin-left: 50%;
     transform: translate(-50%);
 }
 
-.verde{
+.verde {
+    /* CLASSE PARA TEXTO VERDE */
     color: green;
 }
 
-.vermelho{
+.vermelho {
+    /* CLASSE PARA TEXTO VERMELHO */
     color: #c80b0b;
 }
 
-.questionario{
+.questionario {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.questionario h2{
+.questionario h2 {
+    /* TÍTULOS DO QUESTIONÁRIO */
     color: #b6285e;
 }
 
-form{
+form {
+    /* FORMULÁRIO CENTRALIZADO */
     display: flex;
     flex-wrap: wrap;
     width: 40%;
     align-content: space-around;
 }
 
-.questao{
+.questao {
+    /* ESTILO PARA CADA QUESTÃO */
     width: 100%;
-    margin-bottom: 5%
+    margin-bottom: 5%;
 }
 
-.questao input{
-    font-size: 200%;
-    scale: 200%;
+.questao input {
+    /* CONFIGURAÇÃO DOS INPUTS */
+    font-size: 200%; /* TAMANHO MAIOR */
+    scale: 200%; /* DUPLICA A ESCALA */
 }
 
-.resposta{
+.resposta {
     margin-left: 3%;
 }
 
-.qinfo{
+.qinfo {
+    /* SEÇÃO DE INFORMAÇÕES DO QUESTIONÁRIO */
     text-align: center;
 }
 
-.qinfo h2{
-    font-size: 200%;
+.qinfo h2 {
+    font-size: 200%; /* TAMANHO DO TÍTULO */
 }
 
-.qinfo p{
-    font-size: 150%;
+.qinfo p {
+    font-size: 150%; /* TAMANHO DO TEXTO */
 }
 
-.rescor{
+.rescor {
+    /* SEÇÃO DE RESULTADOS E CORES */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.rescor div{
+.rescor div {
     width: 45%;
 }
 
-.qres{
+.qres {
+    /* RESULTADOS INDIVIDUAIS */
     margin-top: 5%;
 }
 
-.qres div{
+.qres div {
+    /* ESTILO DOS BLOCOS DE RESULTADO */
     display: flex;
     flex-wrap: wrap;
     margin-top: 5%;
 }
 
-.qres div{
+.qres div {
     width: 100%;
     font-size: 125%;
 }
 
-.correcao{
+.correcao {
+    /* SEÇÃO DE CORREÇÃO */
     margin-top: 5%;
     font-size: 125%;
     text-align: center;
     align-content: center;
 }
 
-.correcao p{
+.correcao p {
     width: 100%;
 }
 
-.linha{
+.linha {
+    /* LINHA VERTICAL DIVISÓRIA */
     border-left: 0.4vh solid black;
 }
 
-.butao{
+.butao {
+    /* SEÇÃO DE BOTÕES */
     width: 100%;
     text-align: center;
 }
 
-button{
-    width: 20%;
-    height: 10vh;
-    margin-top: 5%;
-    font-size: 200%;
-    border: 0.4vh solid black;
-    border-radius: 2vh;
+button {
+    /* ESTILO DOS BOTÕES */
+    border: 2px solid black;
     background-color: #ff86b6;
+    margin-top: 5%;
+    padding: 25px;
+    width: 350px;
+    height: 87px;
+    border-radius: 25px;
+    font-size: 25px;
 }
 
-button:hover{
-    background-color: #ff4b90;
-    scale: 110%;
+button:hover {
+    /* EFEITO HOVER NOS BOTÕES */
     cursor: pointer;
-    transition: 0.15s;
+    transition: 0.10s;
+    background-color: #ff4b90;
+    scale: 105%;
 }
 
-footer{
+footer {
+    /* ESTILO DO RODAPÉ */
     background-color: #ff86b6;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
-footer h1{
+footer h1 {
     font-size: 35px;
     text-align: center;
 }
 
-footer ul{
+footer ul {
+    /* LISTA NO RODAPÉ */
     font-size: 25px;
     text-align: left;
     padding-left: 45%;
@@ -238,41 +253,45 @@ footer ul{
     margin-bottom: 0;
 }
 
-footer ul li{
-    text-align: left;
+footer h1, ul {
+    color: black;
 }
 
-footer ul li:hover{
-    scale: 110%;
+footer ul li:hover {
+    /* EFEITO HOVER NOS ITENS DO RODAPÉ */
+    scale: 105%;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.10s;
 }
 
-footer img{
+footer img {
+    /* IMAGENS NO RODAPÉ */
     width: 400px;
 }
 
-.footer_{
+.footer_ {
+    /* LAYOUT DO RODAPÉ */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.ul_{
+.ul_ {
+    /* REMOVENDO ESTILO PADRÃO DA LISTA */
     list-style: none;
     padding-left: 0;
+    font-size: 25px;
 }
 
-.img_{
+.img_ {
+    /* ESTILO DAS IMAGENS NO RODAPÉ */
+    margin: 5px;
     width: 100px;
 }
 
-.img_:hover{
+.img_:hover {
+    /* EFEITO HOVER NAS IMAGENS */
     scale: 110%;
     cursor: pointer;
     transition: 0.2s;
 }
-
-
-
-

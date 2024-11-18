@@ -1,13 +1,20 @@
-function price(){
-    /* variáveis */
+// FUNÇÃO QUE CALCULA PRICE E EXIBE OS RESULTADOS NA TABELA
+function price() {
+    // OBTENDO OS VALORES DIGITADOS PELO USUÁRIO
     let v = parseFloat(document.getElementById('v').value);
     let i = parseFloat(document.getElementById('i').value);
     let n = parseFloat(document.getElementById('n').value);
+
+    // CÁLCULO DO JUROS E DA PRESTAÇÃO
     let juros = v * i;
-    let p = (v * Math.pow(1+i , n) * i)/(Math.pow(1+i , n)-1);
+    let p = (v * Math.pow(1 + i, n) * i) / (Math.pow(1 + i, n) - 1);
     let amor = p - juros;
+
+    // MOSTRA AO CORPO DA TABELA ONDE AS LINHAS SERÃO INSERIDAS
     let corpo = document.querySelector('table tbody');
-    let linha1 =`
+
+    // LINHA INICIAL DA TABELA (ANTES DAS PARCELAS)
+    let linha1 = `
                 <tr>
                     <td>0</td>
                     <td></td>
@@ -17,25 +24,29 @@ function price(){
                 </tr>
                 `;
 
-    /* tratamento de erro */
-    if (isNaN(v) || isNaN(i) || isNaN(n)){
-        alert ('Um ou mais campos foram preenchidos incorretamente. Certifique-se de que todas as informações são números válidos.')
-    }else{
-    /* processo de construção da tabela */
+    // VERIFICAÇÃO DE CAMPOS INVÁLIDOS
+    if (isNaN(v) || isNaN(i) || isNaN(n)) {
+        alert('Um ou mais campos foram preenchidos incorretamente. Certifique-se de que todas as informações são números válidos.');
+    } else {
+        // COLOCANDO A LINHA INICIAL NA TABELA
         corpo.innerHTML = linha1;
-        for (let par=1; par<=n; par++){
 
-            let linha =`
+        // LOOP PARA CALCULAR E INSERIR CADA PARCELA NA TABELA
+        for (let par = 1; par <= n; par++) {
+            let linha = `
                 <tr>
                     <td>${par}</td>
                     <td>${p.toFixed(2)}</td>
                     <td>${juros.toFixed(2)}</td>
                     <td>${amor.toFixed(2)}</td>
-                    <td>${(v-amor).toFixed(2)}</td>
+                    <td>${(v - amor).toFixed(2)}</td>
                 </tr>
                 `;
 
+            // ADICIONANDO A NOVA LINHA AO CORPO DA TABELA
             corpo.innerHTML += linha;
+
+            // ATUALIZANDO OS VALORES PARA O PRÓXIMO CALCULO
             v = v - amor;
             juros = v * i;
             amor = p - juros;
@@ -43,7 +54,9 @@ function price(){
     }
 }
 
-function resposta(){
+// FUNÇÃO QUE AVALIA AS RESPOSTAS DO QUESTIONÁRIO
+function resposta() {
+    // SELECIONANDO AS RESPOSTAS ESCOLHIDAS PELO USUÁRIO
     var resp1 = document.querySelector('input[name="quest_1"]:checked');
     var resp2 = document.querySelector('input[name="quest_2"]:checked');
     var resp3 = document.querySelector('input[name="quest_3"]:checked');
@@ -54,21 +67,25 @@ function resposta(){
     var resp8 = document.querySelector('input[name="quest_8"]:checked');
     var resp9 = document.querySelector('input[name="quest_9"]:checked');
     var resp10 = document.querySelector('input[name="quest_10"]:checked');
+
+    // INICIO DO CONTADOR DE RESPOSTAS CORRETAS
     var contador = 0;
-    if(resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10){
-        if(resp1.value == "correta"){
-            document.getElementById("resp_correta_1").innerHTML = "<p>Correta!</p>"
+
+    // VERIFICA SE TODAS AS QUESTÕES FORAM RESPONDIDAS
+    if (resp1 && resp2 && resp3 && resp4 && resp5 && resp6 && resp7 && resp8 && resp9 && resp10) {
+        // VERIFICA CADA RESPOSTA, INCREMENTA O CONTADOR SE CORRETA, EXIBE MENSAGENS
+        if (resp1.value == "correta") {
+            document.getElementById("resp_correta_1").innerHTML = "<p>Correta!</p>";
             contador = contador + 1;
+        } else {
+            document.getElementById("resp_errada_1").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 1200; i = 0,02; n = 12.<br> Resposta correta: 113,47</p>";
         }
-        else{
-            document.getElementById("resp_errada_1").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 1200; i = 0,02; n = 12.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 113,47</p>"
-        }
-        if(resp2.value == "correta"){
-            document.getElementById("resp_correta_2").innerHTML = "<p>Correta!</p>"
+        // REPETE A LÓGICA PARA TODAS AS QUESTÕES
+        if (resp2.value == "correta") {
+            document.getElementById("resp_correta_2").innerHTML = "<p>Correta!</p>";
             contador = contador + 1;
-        }
-        else{
-            document.getElementById("resp_errada_2").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 80000; i = 0,005; n = 180.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 675,06</p>"
+        } else {
+            document.getElementById("resp_errada_2").innerHTML = "<p>Incorreta. Resposta correta: 675,06</p>";
         }
         if(resp3.value == "correta"){
             document.getElementById("resp_correta_3").innerHTML = "<p>Correta!</p>"
@@ -126,9 +143,11 @@ function resposta(){
         else{
             document.getElementById("resp_errada_10").innerHTML = "<p>Incorreta. Utilize os dados da questão: PV = 20000; i = 0,018; n = 36.<br> Substitua os valores na fórmula pelos valores dados.<br><br> Resposta correta: 27411,68</p>"
         }
+
+        // EXIBE O TOTAL DE RESPOSTAS CORRETAS
         document.getElementById("quantos_acertos").innerHTML = "Você acertou " + contador + " questões!";
-    }
-    else{
-        alert("Não deixe questões em branco!")
+    } else {
+        // ALERTA O USUÁRIO CASO ALGUMA QUESTÃO NÃO TENHA SIDO RESPONDIDA
+        alert("Não deixe questões em branco!");
     }
 }

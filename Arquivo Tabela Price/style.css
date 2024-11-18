@@ -1,47 +1,57 @@
 @font-face {
+    /* DEFINIÇÃO DE UMA FONTE PERSONALIZADA */
     font-family: CarvingSoft;
     src: url(fontes/MADECarvingSoftPERSONALUSE-SemiBold.otf);
 }
-*{
+
+* {
+    /* SEM MARGENS E APLICAÇÃO DA FONTE PADRÃO */
     margin: 0;
     font-family: CarvingSoft;
 }
 
-a{
+a {
+    /* REMOÇÃO DE SUBLINHADOS EM LINKS E DA COR */
     text-decoration: none;
     color: inherit;
 }
 
-header{
+header {
+    /* CONFIGURAÇÕES DO CABEÇALHO */
     text-align: center;
     align-content: center;
     margin: 0;
     height: 140px;
-    background-color: #ff86b6;
+    background-color: #ff86b6; /* COR DE FUNDO ROSA */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* PERMITE QUE O CONTEÚDO SE AJUSTE */
 }
 
-header h1{
+header h1 {
+    /* ESTILO DO TÍTULO NO CABEÇALHO */
     color: #b6285e;
     font-size: 225%;
 }
 
-header div{
+header div {
+    /* CONFIGURAÇÃO DO LAYOUT DENTRO DO CABEÇALHO */
     width: 100%;
 }
 
-.htitle{
+.htitle {
+    /* ÁREA DO TÍTULO NO CABEÇALHO */
     height: 75%;
     align-content: center;
 }
 
-.hnav{
+.hnav {
+    /* ÁREA DE NAVEGAÇÃO NO CABEÇALHO */
     display: flex;
     height: 25%;
 }
 
-nav{
+nav {
+    /* CONFIGURAÇÃO DO MENU DE NAVEGAÇÃO */
     width: 100%;
     align-self: flex-end;
     background-color: #b6285e;
@@ -50,6 +60,7 @@ nav{
 }
 
 nav ul {
+    /* CONFIGURAÇÃO DA LISTA DE NAVEGAÇÃO */
     list-style-type: none;
     padding-left: 5%;
     padding-right: 5%;
@@ -60,70 +71,86 @@ nav ul {
 }
 
 nav ul li {
+    /* ESTILO DOS ITENS DA LISTA DE NAVEGAÇÃO */
     display: inline;
     color: white;
     font-size: 130%;
     width: 20%;
 }
 
-nav ul li:hover{
+nav ul li:hover {
+    /* EFEITO HOVER NOS ITENS DO MENU */
     text-decoration: underline white;
     cursor: pointer;
 }
 
-main{
+main {
+    /* ESTILO DA ÁREA PRINCIPAL */
     text-align: center;
     background-color: #ffdae0;
 }
-footer{
+
+footer {
+    /* ESTILO DA ÁREA DO RODAPÉ */
     padding-top: 2%;
     padding-bottom: 2%;
     background-color: #ff86b6;
 }
-input{
+
+input {
+    /* ESTILO DOS CAMPOS DE ENTRADA */
     border: 2px solid black;
     width: 300px;
     padding: 25px;
     border-radius: 10px;
     font-size: 25px;
 }
-button{
+
+button {
+    /* ESTILO DOS BOTÕES */
     border: 2px solid black;
     background-color: #ff86b6;
     padding: 25px;
     width: 350px;
     height: 87px;
-    border: 2px solid black;
     border-radius: 25px;
     font-size: 25px;
 }
-button:hover{
+
+button:hover {
+    /* EFEITO HOVER NOS BOTÕES */
     cursor: pointer;
     transition: 0.10s;
     background-color: #ff4b90;
     scale: 105%;
 }
 
-img{
+img {
+    /* TAMANHO PADRÃO DAS IMAGENS */
     width: 400px;
 }
-.rchrd_prc{
+
+.rchrd_prc {
+    /* TAMANHO PERSONALIZADO PARA IMAGENS ESPECÍFICAS */
     width: 200px;
 }
 
-.header_{
+.header_ {
+    /* ESTILO DO CABEÇALHO DE SEÇÕES */
     height: 90px;
     text-decoration: underline 2.5px;
     text-decoration-color: #b6285e;
 }
 
-.box_mae{
+.box_mae {
+    /* LAYOUT DE FLEXBOX PARA CONTEÚDOS */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.card{
+.card {
+    /* ESTILO DOS CARDS */
     border-radius: 10px;
     padding: 25px;
     background-color: #ff86b6;
@@ -133,18 +160,21 @@ img{
     width: 1600px;
 }
 
-p{
+p {
+    /* ESTILO DOS PARÁGRAFOS */
     font-size: 25px;
     color: white;
 }
 
-h1{
+h1 {
+    /* ESTILO DOS TÍTULOS */
     font-size: 35px;
     color: #b6285e;
     text-align: center;
 }
 
-.card_{
+.card_ {
+    /* CONFIGURAÇÃO DE UM CARD ESPECÍFICO */
     padding: 100px;
     width: 1000px;
     margin-left: 50%;
@@ -154,7 +184,8 @@ h1{
     justify-content: space-evenly;
 }
 
-.card ul{
+.card ul {
+    /* ESTILO DE LISTAS DENTRO DOS CARDS */
     font-size: 25px;
     color: #b6285e;
     text-align: left;
@@ -162,57 +193,73 @@ h1{
 }
 
 table {
+    /* ESTILO DAS TABELAS */
     border-collapse: collapse;
     width: 82%;
     margin-top: 3%;
 }
+
 table td, table th {
+    /* ESTILO DAS PARTES DA TABELA */
     border: 2px solid black;
     padding: 8px;
 }
-tr{
+
+tr {
+    /* ESTILO DAS LINHAS DAS TABELAS */
     font-size: 25px;
     color: white;
     background-color: #ff86b6;
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
+    /* ESTILO ALTERNADO PARA LINHAS PARES */
     background-color: #ff4b90;
 }
 
 th {
+    /* ESTILO DOS CABEÇALHOS DAS TABELAS */
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: #ff4b90; 
+    background-color: #ff4b90;
     color: white;
 }
 
-.footer_{
+.footer_ {
+    /* CONFIGURAÇÃO DO RODAPÉ EM FLEXBOX */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.ul_{
+.ul_ {
+    /* ESTILO DE LISTAS NO RODAPÉ */
     list-style: none;
     padding-left: 0;
     font-size: 25px;
 }
-.img_{
+
+.img_ {
+    /* ESTILO DAS IMAGENS NO RODAPÉ */
     margin: 5px;
     width: 100px;
 }
 
-.img_:hover{
+.img_:hover {
+    /* EFEITO HOVER NAS IMAGENS DO RODAPÉ */
     scale: 110%;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.inpt{
+.inpt {
+    /* MARGEM PARA OS CAMPOS DE ENTRADA */
     margin: 25px;
 }
-.inpt_{
+
+.inpt_ {
+    /* ESTILO ESPECÍFICO PARA BOTÕES DE ENTRADA */
     font-size: 50px;
     width: 800px;
     height: 150px;
@@ -220,15 +267,18 @@ th {
     margin-bottom: 50px;
 }
 
-a{
+a {
+    /* REMOÇÃO DE SUBLINHADO DOS LINKS */
     text-decoration: none;
 }
 
-footer h1,ul{
+footer h1, ul {
+    /* COR DOS TÍTULOS E LISTAS NO RODAPÉ */
     color: black;
 }
 
-footer ul li:hover{
+footer ul li:hover {
+    /* EFEITO HOVER EM ITENS DE LISTA DO RODAPÉ */
     scale: 105%;
     cursor: pointer;
     transition: 0.10s;
