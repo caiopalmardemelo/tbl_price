@@ -50,7 +50,7 @@ header div {
     height: 25%;
 }
 
-nav {
+.hnav_ {
     /* CONFIGURAÇÃO DO MENU DE NAVEGAÇÃO */
     width: 100%;
     align-self: flex-end;
@@ -59,7 +59,7 @@ nav {
     align-content: center;
 }
 
-nav ul {
+.hnav_ ul {
     /* CONFIGURAÇÃO DA LISTA DE NAVEGAÇÃO */
     list-style-type: none;
     padding-left: 5%;
@@ -70,7 +70,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
+.hnav ul li {
     /* ESTILO DOS ITENS DA LISTA DE NAVEGAÇÃO */
     display: inline;
     color: white;
@@ -78,7 +78,7 @@ nav ul li {
     width: 20%;
 }
 
-nav ul li:hover {
+.hnav ul li:hover {
     /* EFEITO HOVER NOS ITENS DO MENU */
     text-decoration: underline white;
     cursor: pointer;
@@ -161,7 +161,7 @@ img {
 }
 
 .form{
-    filter: invert();
+    filter: invert(100%);
     scale: 110%;
 }
 
@@ -203,9 +203,13 @@ h1 {
 
 table {
     /* ESTILO DAS TABELAS */
+    position: relative;
     border-collapse: collapse;
-    margin-top: 3%;
-    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 45%;
+    opacity: 0;
 }
 
 table td, table th {
@@ -298,6 +302,87 @@ footer ul li:hover {
     transition: 0.10s;
 }
 
-/* RESPONSIVIDADE */
+/* MENU RETRÁTIL */
 
-@media screen and (max-width: 800px) {
+.menu{
+    display: none;
+}
+
+.menuicon{
+    position: absolute;
+    top: 43px;
+    left: 39px;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menuicon span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #b6285e;
+    border-radius: 3px;
+    transition: all ease 0.5s;
+}
+
+.menuicon span:active{
+    background-color: white;
+}
+
+.check{
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check:checked ~ .menuicon span:nth-child(1){
+    transform-origin: 0% 100%;
+    transform: rotate(45deg) scaleX(1.15);
+}
+
+.check:checked ~ .menuicon span:nth-child(2){
+    opacity: 0;
+}
+
+.check:checked ~ .menuicon span:nth-child(3){
+    transform-origin: 0% 0%;
+    transform: rotate(-45deg) scaleX(1.15);
+}
+
+.menu ul{
+    list-style-type: none;
+    position: absolute;
+    z-index: 998;
+    top: -17px;
+    left: -1000px;
+    width: 40%;
+    height: 3349px;
+    padding-top: 100px;
+    background-color: #b6285e;
+    transition: 0.5s;
+}
+
+.check:checked ~ ul{
+    left: 0px;
+}
+
+.menu ul li{
+    padding: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 200%;
+}
+
+.menu ul li:hover{
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */

@@ -5,6 +5,9 @@ function price() {
     let i = parseFloat(document.getElementById('i').value);
     let n = parseFloat(document.getElementById('n').value);
 
+    // TORNANDO A TABELA VISIVEL
+    document.getElementById('tabela').style.opacity = 100
+
     // CÁLCULO DO JUROS E DA PRESTAÇÃO
     let juros = v * i;
     let p = (v * Math.pow(1 + i, n) * i) / (Math.pow(1 + i, n) - 1);
