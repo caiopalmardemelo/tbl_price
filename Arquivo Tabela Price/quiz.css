@@ -33,19 +33,41 @@ header h1 {
     font-size: 225%;
 }
 
-header div {
-    width: 100%; /* FAZ O ELEMENTO OCUPAR TODA A LARGURA */
+.cabeca{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-/* SEPARANDO ALTURA DO HEADER ENTRE TÍTULO E NAVEGAÇÃO */
+.cabeca div{
+    height: 100%;
+    justify-content: center;
+}
+
+.logo{
+    width: 25%;
+}
+
+.logo img{
+    width: 20%;
+}
+
 .htitle {
+    /* ÁREA DO TÍTULO NO CABEÇALHO */
     height: 75%;
     align-content: center;
+    width: 50%;
+}
+
+.bruh{
+    width: 25%;
 }
 
 .hnav {
+    /* ÁREA DE NAVEGAÇÃO NO CABEÇALHO */
     display: flex;
-    height: 25%;
+    height: 30%;
+    width: 100%;
 }
 
 /* ESTILIZAÇÃO DO NAV (MENU DE NAVEGAÇÃO) */
@@ -105,12 +127,12 @@ main {
 
 .verde {
     /* CLASSE PARA TEXTO VERDE */
-    color: green;
+    color: rgb(12, 129, 12);
 }
 
 .vermelho {
     /* CLASSE PARA TEXTO VERMELHO */
-    color: #c80b0b;
+    color: rgb(253, 20, 20);
 }
 
 .questionario {
@@ -136,6 +158,11 @@ form {
     /* ESTILO PARA CADA QUESTÃO */
     width: 100%;
     margin-bottom: 5%;
+    background-color: #ff86b6;
+    border: #b6285e;
+    border-style: dotted;
+    border-radius: 1vh;
+    padding: 5%;
 }
 
 .questao input {
@@ -203,7 +230,7 @@ form {
 
 .linha {
     /* LINHA VERTICAL DIVISÓRIA */
-    border-left: 0.4vh solid black;
+    border-left: 0.4vh dotted #b6285e;
 }
 
 .butao {
